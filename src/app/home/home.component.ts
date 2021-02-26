@@ -7,7 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  isWorking = "Tá funfando!";
   teste = "Testando valores";
+  ninja = {
+    nome: "Mateus",
+    faixa: "Bacon"
+  };
 
   alertMe(textoExibido: string) {
     alert(textoExibido);

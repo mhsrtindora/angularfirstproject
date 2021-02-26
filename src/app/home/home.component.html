@@ -1,7 +1,12 @@
-<p>Tá funfando</p>
+<p>{{isWorking}}</p>
 
-<input value="{{teste}}">
+<input value="{{teste}}"/>
 
 <button (click) = "alertMe('Aooooopa bão ou bão')">
   Clica aqui zé ruela
 </button>
+
+<input [(ngModel)]="ninja.nome"/>
+<p>{{ninja.nome}}</p>
+<input [(ngModel)]="ninja.faixa"/>
+<p>{{ninja.faixa}}</p>

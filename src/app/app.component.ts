@@ -9,5 +9,11 @@ import { NavbarComponent } from './navbar/navbar.component';
   providers: [HomeComponent, NavbarComponent]
 })
 export class AppComponent {
+  ninja = {
+    nome: "Teste",
+    faixa: "branca"
+  };
 
+  title = 'ninja-classes';
+  frase = 'Olá, Mateus! Seja bem vindo!';
 }

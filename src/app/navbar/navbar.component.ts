@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,8 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  title = 'ninja-classes';
-  frase = 'Olá, Mateus! Seja bem vindo!';
+  @Input() title: any;
+  @Input() frase: any;
 
   constructor() { }
 

@@ -7,6 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  teste = "Testando valores";
+
+  alertMe(textoExibido: string) {
+    alert(textoExibido);
+  }
+
   constructor() { }
 
   ngOnInit(): void {

@@ -17,8 +17,4 @@ export class AppComponent {
 
   title = 'ninja-classes';
   frase = 'Olá, Mateus! Seja bem vindo!';
-
-  yell(e: any){
-    alert("ALôôÔÔO bão ou bão");
-  }
 }

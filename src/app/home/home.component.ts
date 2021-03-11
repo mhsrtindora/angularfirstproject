@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -14,14 +14,13 @@ export class HomeComponent implements OnInit {
     faixa: "Bacon"
   };
   @Input() ninjas: any;
-  @Output() onYell = new EventEmitter();
 
-  fireYellEvent(e: any) {
-    this.onYell.emit(e);
-  }
-
-  alertMe(textoExibido: string) {
-    alert(textoExibido);
+  alertMe(textoExibido: string, botaoChamador: string) {
+    if(botaoChamador === "Zé Ruela"){
+      alert(textoExibido);
+    } else {
+      alert("ALÔOOOOOOOOOOOO");
+    }    
   }
 
   constructor() { }
